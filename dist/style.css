@@ -1,0 +1,240 @@
+/* sa fac si un css reset */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+input,
+button,
+form,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* nu stiu de ce imaginea de fundal nu acopera tot ecranul cand incerc alte dimensiuni....
+De ce lui ding-09 ii merge cu aceleasi setari dar mie nu?!? Singura diferenta e ca el nu a pus pe body... Ok, incerc pe div
+era altceva. Cica parintii, adica body si html trebuiau setati si ei la 100%. Sau sa folosesc 100vh
+*/
+body {
+  color: white;
+  font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
+  text-shadow: 2px 2px 4px black;
+}
+
+html {
+  font-size: 10px;
+}
+
+#page-content {
+  background-image: url('images/weather2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+}
+
+.app-title {
+  width: 25%;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 1px 1px 1px rgb(48 48 48),
+    inset 0 -1px 1px 1px rgb(128 128 128);
+  border-radius: 10px;
+}
+
+#un-buton {
+  background-color: white;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(100, 100, 250, 0.05);
+}
+
+#magnify-glass {
+  margin-left: 5px;
+  width: 35px;
+  cursor: pointer;
+  transform: scaleX(-1);
+}
+
+#weather-location {
+  height: 30px;
+  font-size: 2rem;
+  padding-left: 10px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(100, 100, 250, 0.05);
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.4;
+  text-shadow: 2px 2px 4px black;
+}
+
+#weather-location:focus {
+  outline: none;
+  background-color: rgba(100, 100, 250, 0.05);
+}
+
+#no-data {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  visibility: hidden;
+  padding-top: 20px;
+}
+
+#celsius-fahrenheit {
+  width: 25%;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 20px 0;
+  height: auto;
+  width: auto;
+  max-width: 570px;
+  background-color: rgba(100, 100, 250, 0.3);
+  border-radius: 20px;
+  box-shadow: 0px 0px 21px 2px rgba(0, 0, 11, 1);
+}
+
+#temp {
+  padding-left: 10px;
+  font-size: 6rem;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+
+#tempF {
+  padding-left: 10px;
+  font-size: 6rem;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+}
+
+#feel-like {
+  display: block;
+}
+
+#feel-like-fahrenheit {
+  display: none;
+}
+
+.temp-location {
+  font-size: 3.2rem;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+#weather-icon {
+  width: 64px;
+  height: 64px;
+}
+
+#weather-info {
+  width: 65%;
+}
+
+#location {
+  padding-right: 5px;
+}
+
+#location-country {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 2rem;
+  padding-left: 65px;
+  margin-top: 40px;
+}
+
+#country-flag {
+  display: block;
+  width: 32px;
+}
+
+.weather {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+#weather-type {
+  text-align: left;
+  font-size: 2rem;
+}
+
+#weather-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 65px;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#wind-speed {
+  margin: 10px 0;
+}
+
+.sunset-sunrise {
+  padding: 5px;
+  display: flex;
+  font-size: 2rem;
+  padding-left: 65px;
+}
+
+#sunrise {
+  padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #weather-card {
+    padding: 0px 15px;
+  }
+
+  #location-country {
+    padding-left: 15px;
+  }
+
+  .sunset-sunrise {
+    padding-left: 15px;
+  }
+}
