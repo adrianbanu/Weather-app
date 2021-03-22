@@ -1,6 +1,6 @@
 # Weather app built for TOP
 
-#### Built with: HTML, CSS, JS, Webpack, OpenWeatherMap API 
+#### Built with: HTML, CSS, JS, Webpack, OpenWeatherMap API. 
 
 ### [Live Demo](https://adrianbanu.github.io/Weather-app)
 
