@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="no-data">Location not found!</div>
+      <main>
+        <div id="content">
+          <div id="the-form">
+            <form id="search-form">
+              <div id="search-box">
+                <button type="submit" id="un-buton">
+                  <img id="magnify-glass" src="images/magnify_glass.png" />
+                </button>
+                <input
+                  type="text"
+                  placeholder="Search city"
+                  id="weather-location"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
+          <div id="weather-card">
+            <div class="weather-info">
+              <div class="temp-location">
+                <img id="weather-icon" src="" alt="" />
+                <div id="temp"></div>
+                <div id="tempF"></div>
+              </div>
+              <div class="weather">
+                <div id="weather-type"></div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div id="feel-like"></div>
+              <div id="feel-like-fahrenheit"></div>
+              <div id="wind-speed"></div>
+              <div id="humidity"></div>
+            </div>
+          </div>
+          <div id="location-country">
+            <div id="location"></div>
+            <img id="country-flag" src="" alt="" />
+          </div>
+
+          <div class="sunset-sunrise">
+            <div id="sunrise"></div>
+            <div id="sunset"></div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
